@@ -1,79 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333; 
+  display: flex; /* Flexbox layout for the body */
+  flex-direction: column; /* Stacks elements vertically */
+  min-height: 100vh; /* Full viewport height */
 }
 
+/* Header, Main, and Footer Styling */
 header, main, footer {
-    padding: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: green;
 }
 
 header {
-    background-color: #333;
-    color: green;
+  /* Additional styling for the header if needed */
 }
 
 main {
-    flex: 1;
-    color: green;
-    background-color: #333;
+  flex: 1; 
 }
 
 footer {
-    background-color: #333;
-    color: green;
+  /* Footer specific styles if needed */
 }
 
-/* Flexbox */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #333;
-}
-
-/* Add a black background color to the top navigation */
+/* Top Navigation Styles */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: green;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: green;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: green;
-  }
+  background-color: #333;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+}
 
+.topnav a {
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+}
+
+/* CSS Grid */
+.grid {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  background-color: aquamarine;
+  padding: 20px; 
+}
+
+/* Styles for banner and figure images */
 .bannerimage {
-    width: 100%;
-    background-image: url(../images/Landscape.jpg);
-    height: 405px;
-    background-color: green;
-    background-position: center;
-  }
+  width: 100%;
+  height: 405px;
+  background-image: url(../images/Landscape.jpg);
+  background-color: green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
 
-  .figureimage {
-    width: 25%;
-    background-image: url(../images/Tree.jpg);
-    height: 405px;
-    background-color: green;
-    background-position: left;
-    margin: 2em;
-    border-radius: 2em;
-  }
+.figureimage {
+  width: 25%;
+  height: 405px;
+  background-image: url(../images/Tree.jpg);
+  background-color: green;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2em;
+  border-radius: 2em;
+}
