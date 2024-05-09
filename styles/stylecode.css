@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex; /* Flexbox layout for the body */
+  flex-direction: column; /* Stacks elements vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+header {
+  opacity: .6;
+  padding: 1em;
+  background-color: #333;
+  color: green;
+  border-radius: 2em;
+  width: 99%;
+}
+
+footer {
+  padding: 1em;
+  background-color: #333;
+  color: green;
+  border-radius: 2em;
+}
+
+main {
+  width: 100%;
+  flex: none;
+  background-color: aquamarine;
+  color: green;
+ }
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+}
+
+.topnav a {
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  border-radius: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  gap: 20px; /* Consistent spacing between grid items */
+  padding: 20px;
+  border-radius: 2em;
+}
+
+.bannerimage {
+  background-image: url(../images/Landscape.jpg);
+  background-color: green;
+  width: 100%;
+  height: 405px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  border-radius: 2em;
+  padding: 2em;
+  width: 100%;
+  padding: 2px;
+}
+
+.grid-item-1 {
+  background-color: #333;
+  border-radius: 2em;
+
+}
+.grid-item-2 {
+  background-color: #333;
+  border-radius: 2em;
+  
+}

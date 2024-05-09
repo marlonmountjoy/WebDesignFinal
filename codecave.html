@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Cave</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylecode.css">
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="musicstage.html">Music Stage</a>
+        <a href="artpad.html">Art Pad</a>
+        <a class="active" href="codecave.html">Code Cave</a>
+        <a href="">ET Phone Home</a>
+    </div>
+    <div class="bannerimage">
+        <header>
+            <h1>Marlon Mountjoy</h1>
+        </header>
+    </div>
+        <main>
+            <div class="grid">
+                <div class="grid-item-1">
+                    <pre><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Flexbox Example&lt;/title&gt;
+                            &lt;link rel="stylesheet" type="text/css" href="styles/style.css"&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;div class="topnav"&gt;
+                                &lt;a class="active" href="#home"&gt;Home&lt;/a&gt;
+                                &lt;a href="musicstage.html"&gt;Music Stage&lt;/a&gt;
+                                &lt;a href="artpad.html"&gt;Art Pad&lt;/a&gt;
+                                &lt;a href="codecave.html"&gt;Code Cave&lt;/a&gt;
+                                &lt;a href=""&gt;ET Phone Home&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="bannerimage"&gt;
+                                &lt;header&gt;
+                                    &lt;h1&gt;Marlon Mountjoy&lt;/h1&gt;
+                                &lt;/header&gt;
+                            &lt;/div&gt;
+                            &lt;main&gt;
+                                &lt;div class="grid"&gt;
+                                    &lt;div class="grid-item-1"&gt;
+                                        &lt;div class="figureimage"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="grid-item-2"&gt;
+                                        &lt;p&gt;This is an about me blurb
+                                        My name is Marlon, I was born in Olympia Washington in 1983.
+                                        I am pursuing a Bachelors of Science focused on computers at The Evergreen State College.
+                                        I am an avid musician, I enjoy the outdoors and sports involving wheels.&lt;/p&gt;
+                                        &lt;p&gt;I am writing this in order to express my passion for web development
+                                        I want to show my love for pure CSS while acknowledging my passion for JavaScript
+                                        I request more content from the overseers I am running dry&lt;/p&gt;
+                                        &lt;p&gt;I really like web animation, I have explored ThreeJS a JavaScript library
+                                        for 3D scenes and animation. If you visit the Art Pad link in the navigation 
+                                        bar at the top of this page, you will find my experiment with creating 3D scenes
+                                        and animation using only CSS!!!&lt;/p&gt;
+                                    &lt;/div&gt;        
+                                    &lt;div class="grid-item-3"&gt;
+                                       
+                                    &lt;/div&gt;
+                                    &lt;div class="grid-item-4"&gt;
+                                        &lt;iframe width="100%" height="100%" src="https://www.youtube.com/embed/DEqXNfs_HhY?si=ZINHxvJ8eZ1MHbjq"&gt;
+                                        &lt;/iframe&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="grid-item-5"&gt;
+                                        &lt;iframe width="100%" height="100%" src="https://www.youtube.com/embed/NdftnCDwKaU?si=dHzv10rbYJyWhKaV"&gt;
+                                        &lt;/iframe&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="grid-item-6"&gt;
+                                       
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/main&gt;
+                            &lt;footer&gt;
+                                &lt;p&gt;&amp;copy; 2024 marlon.m@evergreen.edu&lt;/p&gt;
+                            &lt;/footer&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code></pre>
+        </div>
+                <div class="grid-item-2">
+                    <pre><code>
+                        body {
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            margin: 0;
+                            padding: 0;
+                            background-color: #333;
+                            display: flex; /* Flexbox layout for the body */
+                            flex-direction: column; /* Stacks elements vertically */
+                            min-height: 100vh; /* Full viewport height */
+                        }
+                        
+                        header {
+                            opacity: .6;
+                            padding: 1em;
+                            background-color: #333;
+                            color: green;
+                            border-radius: 2em;
+                            width: 99%;
+                        }
+                        
+                        footer {
+                            padding: 1em;
+                            background-color: #333;
+                            color: green;
+                            border-radius: 2em;
+                        }
+                        
+                        main {
+                            flex: 1;
+                            padding: 1em;
+                            background-color: #333;
+                            color: green;
+                            border-radius: 2em; 
+                        }
+                        
+                        iframe {
+                            border-radius: 2em;
+                        }
+                        
+                        .topnav {
+                            background-color: #333;
+                            overflow: hidden;
+                            display: flex; 
+                            justify-content: center; 
+                        }
+                        
+                        .topnav a {
+                            color: green;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                            font-size: 17px;
+                        }
+                        
+                        .topnav a:hover {
+                            background-color: green;
+                            color: black;
+                        }
+                        
+                        .topnav a.active {
+                            background-color: #04AA6D;
+                            border-radius: 2em;
+                        }
+                        
+                        .grid {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr); /* Adjusted to 3 columns */
+                            grid-template-rows: repeat(3, 1fr); /* Adjusted to 3 columns */ 
+                            gap: 20px; /* Consistent spacing between grid items */
+                            padding: 20px;
+                            background-color: aquamarine;
+                            border-radius: 2em;
+                        }
+                        
+                        .bannerimage, .figureimage {
+                            width: 100%;
+                            height: 405px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover; 
+                            border-radius: 2em;
+                        }
+                        
+                        .bannerimage {
+                            background-image: url(../images/Landscape.jpg);
+                            background-color: green;
+                            border-radius 2em;
+                            padding: 2em;
+                            width: 100%;
+                            padding: 2px;
+                        }
+                        
+                        .figureimage {
+                            background-image: url(../images/Tree.jpg);
+                            background-color: green;
+                            margin: 0; 
+                            border-radius: 2em;
+                        }
+                        
+                        .grid-item-2 {
+                            font-family: monospace;
+                            font-size: large;
+                            color: #333;
+                        }
+                        </code></pre>
+                    </div>             
+                </div>
+               
+                <div class="grid-item-3">
+                
+                                
+                </div>
+                <div class="grid-item-4">
+                
+                            
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
