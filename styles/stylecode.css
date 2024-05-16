@@ -47,6 +47,22 @@ main {
   font-size: 17px;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.icon img {
+  height: 40px; /* Adjust the size as needed */
+  margin-right: 20px; /* Space between icon and nav links */
+}
+
+.icon {
+  filter: invert(19%) sepia(97%) saturate(7492%) hue-rotate(91deg) brightness(84%) contrast(122%);
+}
+
 .topnav a:hover {
   background-color: green;
   color: black;
